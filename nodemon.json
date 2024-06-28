@@ -1,0 +1,5 @@
+{
+  "watch": ["server.js", "src/scss/**/*.scss", "views/", "public/css/**/*.css", "public/***/**/*/*.*"],
+  "ext": "js,pug,html,scss,css",
+  "exec": "node server.js"
+}

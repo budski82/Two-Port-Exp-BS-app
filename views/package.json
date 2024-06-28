@@ -1,0 +1,28 @@
+{
+  "name": "project_0",
+  "version": "1.0.0",
+  "description": "There once was a man from Nantucket ...",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently npm:watch:*",
+    "watch:sync": "browser-sync start --server --no-notify --files 'html/*.html', 'js/*.js', 'css/*.css', public/**/*/*.*",
+    "watch:sass": "sass --watch src/scss/main.scss:public/css/main.css",
+    "watch:mon": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "sass": "^1.76.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pug": "^3.0.3"
+  }
+}
