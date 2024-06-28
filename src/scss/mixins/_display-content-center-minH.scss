@@ -1,0 +1,37 @@
+// display-content-center-minH.scss
+$minH: 1vh; $t:1rem; $l: 1rem; $r: 1rem; $b: 1rem; $w: 6.25rem; $h: 6.25rem; 
+
+
+@mixin d_g-c($minH){
+    min-height:    $minH;
+	display:       grid;
+	place-content: center;
+	
+}
+
+
+@mixin d_f-c($minH){
+
+    min-height: 	 $minH;
+	display: 		 flex;
+	justify-content: center;
+	align-items: 	 center;
+	
+}
+
+@mixin w_h($w,$h){
+	width:  $w;
+	height: $h;
+}
+
+@mixin t_l($t,$l,$r,$b){
+	top:    $t;
+	left: 	$l;
+	right:  $r;
+	bottom: $b;
+}
+
+
+
+
+
